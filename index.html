@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sadhish | Web Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <a href="#home" class="logo">S<span>.</span></a>
+    <nav>
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <i class="fas fa-sun" id="themeIcon"></i>
+    </button>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home" class="nav-link">Home</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#skills" class="nav-link">Skills</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </div>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hello animate a1"><span class="dot"></span> Available for work</p>
+        <h1 class="animate a2">Hi, I'm <span class="accent">Sadhish</span></h1>
+        <div class="typing-wrapper animate a3">
+          <h2 id="typing"></h2><span class="cursor">|</span>
+        </div>
+        <p class="desc animate a4">
+          I build clean, responsive and professional web applications — turning ideas into real digital experiences.
+        </p>
+        <div class="hero-buttons animate a5">
+          <button class="btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+            Hire Me <i class="fas fa-arrow-right"></i>
+          </button>
+          <a href="Sadhish_CV.pdf" download class="btn outline">
+            <i class="fas fa-download"></i> Download CV
+          </a>
+        </div>
+        <div class="social-icons animate a6">
+          <a href="https://github.com/sadhish194" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/sadhish-m-93605b302" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:sadhish37341@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="hero-img animate a2">
+        <div class="img-frame">
+          <img src="profile.jpg" alt="Sadhish M">
+        </div>
+        <div class="img-badge">
+          <i class="fas fa-code"></i>
+          <span>MCA Student</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint animate a6">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about section" id="about">
+    <div class="section-inner">
+      <div class="section-label">Who I Am</div>
+      <h2 class="title">About <span class="accent">Me</span></h2>
+      <div class="about-container">
+        <div class="about-text">
+          <p>
+            I'm an <strong>MCA student</strong> at Sri Manakula Vinayagar Engineering College, Pondicherry, passionate about <span class="accent">web development</span>. I specialize in building <strong>clean, responsive, and user-friendly</strong> web applications.
+          </p>
+          <p>
+            My core skills include <strong>HTML, CSS, JavaScript, React, MySQL</strong>, and <strong>Python</strong>. I've completed internships in hardware and hold certifications in JavaScript (Infosys Springboard) and DBMS (NPTEL).
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">2+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">2</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">8.89</span>
+              <span class="stat-label">GPA</span>
+            </div>
+          </div>
+          <div class="about-tags">
+            <span>Frontend</span>
+            <span>React</span>
+            <span>Web Apps</span>
+            <span>Problem Solver</span>
+            <span>PHP</span>
+            <span>MySQL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section alt">
+    <div class="section-inner">
+      <div class="section-label">What I Know</div>
+      <h2 class="title">My <span class="accent">Skills</span></h2>
+      <div class="skills-grid">
+
+        <div class="skill-bar-item" data-level="90">
+          <div class="skill-bar-header">
+            <div class="skill-bar-left">
+              <i class="fa-brands fa-html5 html"></i>
+              <span>HTML5</span>
+            </div>
+            <span class="skill-percent">90%</span>
+          </div>
+          <div class="skill-track"><div class="skill-fill" style="--target: 90%"></div></div>
+        </div>
+
+        <div class="skill-bar-item" data-level="85">
+          <div class="skill-bar-header">
+            <div class="skill-bar-left">
+              <i class="fa-brands fa-css3-alt css"></i>
+              <span>CSS3</span>
+            </div>
+            <span class="skill-percent">85%</span>
+          </div>
+          <div class="skill-track"><div class="skill-fill" style="--target: 85%"></div></div>
+        </div>
+
+        <div class="skill-bar-item" data-level="80">
+          <div class="skill-bar-header">
+            <div class="skill-bar-left">
+              <i class="fa-brands fa-js js"></i>
+              <span>JavaScript</span>
+            </div>
+            <span class="skill-percent">80%</span>
+          </div>
+          <div class="skill-track"><div class="skill-fill" style="--target: 80%"></div></div>
+        </div>
+
+        <div class="skill-bar-item" data-level="70">
+          <div class="skill-bar-header">
+            <div class="skill-bar-left">
+              <i class="fa-brands fa-react react"></i>
+              <span>React</span>
+            </div>
+            <span class="skill-percent">70%</span>
+          </div>
+          <div class="skill-track"><div class="skill-fill" style="--target: 70%"></div></div>
+        </div>
+
+        <div class="skill-bar-item" data-level="75">
+          <div class="skill-bar-header">
+            <div class="skill-bar-left">
+              <i class="fa-solid fa-database mysql"></i>
+              <span>MySQL</span>
+            </div>
+            <span class="skill-percent">75%</span>
+          </div>
+          <div class="skill-track"><div class="skill-fill" style="--target: 75%"></div></div>
+        </div>
+
+        <div class="skill-bar-item" data-level="65">
+          <div class="skill-bar-header">
+            <div class="skill-bar-left">
+              <i class="fa-brands fa-python python"></i>
+              <span>Python</span>
+            </div>
+            <span class="skill-percent">65%</span>
+          </div>
+          <div class="skill-track"><div class="skill-fill" style="--target: 65%"></div></div>
+        </div>
+
+        <div class="skill-bar-item" data-level="72">
+          <div class="skill-bar-header">
+            <div class="skill-bar-left">
+              <i class="fa-solid fa-code php"></i>
+              <span>PHP</span>
+            </div>
+            <span class="skill-percent">72%</span>
+          </div>
+          <div class="skill-track"><div class="skill-fill" style="--target: 72%"></div></div>
+        </div>
+
+        <div class="skill-bar-item" data-level="78">
+          <div class="skill-bar-header">
+            <div class="skill-bar-left">
+              <i class="fa-brands fa-css3-alt tailwind"></i>
+              <span>Tailwind CSS</span>
+            </div>
+            <span class="skill-percent">78%</span>
+          </div>
+          <div class="skill-track"><div class="skill-fill" style="--target: 78%"></div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section" id="projects">
+    <div class="section-inner">
+      <div class="section-label">What I've Built</div>
+      <h2 class="title">My <span class="accent">Projects</span></h2>
+      <p class="subtitle">A collection of projects from my academic journey</p>
+      <div class="project-grid">
+
+        <div class="project-card featured">
+          <div class="project-img">
+            <img src="https://picsum.photos/seed/grocery88/600/340" alt="Smart Grocery Delivery">
+            <div class="project-overlay">
+              <a href="https://github.com/sadhish194/smart-grocery-delivery" target="_blank" class="overlay-btn"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>MongoDB</span><span>Express</span><span>React</span><span>Node.js</span>
+            </div>
+            <h4>Smart Grocery Delivery</h4>
+            <p>Full-stack MERN grocery delivery platform with product browsing, cart management, and order tracking.</p>
+          </div>
+        </div>
+
+        <div class="project-card featured">
+          <div class="project-img">
+            <img src="https://picsum.photos/seed/gift77/600/340" alt="Impressive Gift">
+            <div class="project-overlay">
+              <a href="https://github.com/sadhish194/impressive-gift" target="_blank" class="overlay-btn"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>MongoDB</span><span>Express</span><span>React</span><span>Node.js</span>
+            </div>
+            <h4>Impressive Gift</h4>
+            <p>MERN stack gifting platform — browse, personalise, and send gifts with a smooth, modern shopping experience.</p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img">
+            <img src="https://picsum.photos/seed/pharmacy/600/340" alt="Pharmacy Management System">
+            <div class="project-overlay">
+              <a href="#" class="overlay-btn"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>PHP</span><span>MySQL</span><span>JavaScript</span>
+            </div>
+            <h4>Pharmacy Management System</h4>
+            <p>Web app to manage pharmacy operations — inventory, billing, supplier & customer records with a responsive UI.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section alt">
+    <div class="section-inner">
+      <div class="section-label">Get In Touch</div>
+      <h2 class="title">Contact <span class="accent">Me</span></h2>
+      <p class="subtitle">Have a project in mind? Let's work together.</p>
+
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <div class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <strong>Email</strong>
+              <span>sadhish37341@gmail.com</span>
+            </div>
+          </div>
+          <div class="contact-card">
+            <i class="fab fa-linkedin-in"></i>
+            <div>
+              <strong>LinkedIn</strong>
+              <span>sadhish-m-93605b302</span>
+            </div>
+          </div>
+          <div class="contact-card">
+            <i class="fab fa-github"></i>
+            <div>
+              <strong>GitHub</strong>
+              <span>sadhish194</span>
+            </div>
+          </div>
+        </div>
+
+        <form id="contactForm" class="contact-form">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn full">
+            Send Message <i class="fas fa-paper-plane"></i>
+          </button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h3>Sadhish<span class="accent">.</span></h3>
+        <p>Building clean & modern web experiences.</p>
+      </div>
+      <div class="footer-social">
+        <a href="https://github.com/sadhish194" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/sadhish-m-93605b302" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:sadhish37341@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Sadhish M. Crafted with <i class="fas fa-heart" style="color:#00c8d7"></i> & code.</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
